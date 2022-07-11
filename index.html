@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.jpg">
+
+  <title>Calculator | simple calculator + fractorial and log calculator with different three themes</title>
+  <link rel="stylesheet" href="calculator.css" id="theme">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+</head>
+
+<body>
+
+  <div class="calc">
+    <div class="calc-top">
+      <div class="calc-title">Calculator</div>
+      <div class="calc-theme">
+        <h4>theme</h4>
+        <div class="calc-toggle">
+          <div class="theme-number">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+          </div>
+          <div class="toggle-btn">
+            <span class="indicator" style="right: 3px; left: 50%; transform: translateX(-50%);"></span>
+            <div class="theme-1" onclick="changeTheme('theme-one')"> </div>
+            <div class="theme-2" onclick="changeTheme('theme-two')"> </div>
+            <div class="theme-3" onclick="changeTheme('theme-three')"> </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <center>
+    <div class="container">
+      <td><input class="btn" id="Standard" type="button" value="Standard" onclick="standard()"></td>
+      <td><input class="btn" id="fractorial" type="button" value="fractorial" onclick="fractorial_cal()"></td>
+      <td><input class="btn" id="log calc" type="button" value="log calc" onclick="log_cal()"></td>
+      </tr>
+    </div>
+  </center>
+
+  <center>
+    <form name="form1" onsubmit="equal()">
+      <input class="textview"  name="textview" autofocus>
+    </form>
+  </center>
+
+  <div class="formstyle" id="main-part">
+    <center>
+      <div class="cal">
+        <table>
+          <tr>
+            <td><input class="btn btn1" type="button" value="7" onclick="insert(7)"></td>
+            <td><input class="btn btn1" type="button" value="8" onclick="insert(8)"></td>
+            <td><input class="btn btn1" type="button" value="9" onclick="insert(9)"></td>
+            <td><input class="btn btn-delete btn1" type="button" value="DEL" onclick="backspace()"></td>
+          </tr>
+
+          <tr>
+            <td><input class="btn btn1" type="button" value="4" onclick="insert(4)"></td>
+            <td><input class="btn btn1" type="button" value="5" onclick="insert(5)"></td>
+            <td><input class="btn btn1" type="button" value="6" onclick="insert(6)"></td>
+            <td><input class="btn btn1" type="button" value="+" onclick="insert('+')"></td>
+          </tr>
+
+          <tr>
+            <td><input class="btn btn1" type="button" value="1" onclick="insert(1)"></td>
+            <td><input class="btn btn1" type="button" value="2" onclick="insert(2)"></td>
+            <td><input class="btn btn1" type="button" value="3" onclick="insert(3)"></td>
+            <td><input class="btn btn1" type="button" value="-" onclick="insert('-')"></td>
+          </tr>
+
+          <tr>
+            <td><input class="btn btn1" type="button" value="." onclick="insert('.')"></td>
+            <td><input class="btn btn1" type="button" value="0" onclick="insert(0)"></td>
+            <td><input class="btn btn1" type="button" value="/" onclick="insert('/')"></td>
+            <td><input class="btn btn1" type="button" value="&#215" onclick="insert('*')"></td>
+
+          </tr>
+        </table>
+        <input class="btn btn1" type="button" value="C" onclick="backspace() ">
+        <input class="btn btn-reset-1 btn1" type="button" style="width: 128px" value="RESET"
+          onclick="form1.textview.value = ' ' ">
+        <input class="btn btn-reset-2 btn1" type="button" style="width: 128px" value="result" onclick="equal()">
+      </div>
+
+    </center>
+  </div>
+  <h3 class="view"> total views : </h3>
+  <div id="CounterVisitor">
+
+    <div class="counter-item-1 counter"></div>
+    <div class="counter-item-2 counter"></div>
+    <div class="counter-item-3 counter"></div>
+    <div class="counter-item-4 counter"></div>
+    <div class="counter-item-5 counter"></div>
+    <div class="counter-item-6 counter"></div>
+  </div>
+  <div class="attribution">
+    Coded by <a href="https://github.com/ravi9694?tab=repositories" target="_blank" class="creater2">Ravi Kumar</a>
+  </div>
+  <script src="calculator.js"></script>
+</body>
+
+</html>
