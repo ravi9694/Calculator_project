@@ -1,12 +1,10 @@
-# Frontend Mentor - Calculator app
-[Preview of website](https://kkumar-gcc.github.io/Calculator/)
-![Design preview for the Calculator app coding challenge](./design/desktop-preview.jpg)
+# ![Design preview for the Calculator app coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+challenges help you improve your coding skills by building realistic projects.
 
 **To do this challenge, you need a good understanding of HTML, CSS and JavaScript.**
 
@@ -23,7 +21,7 @@ Your users should be able to:
 - Adjust the color theme based on their preference
 - **Bonus**: Have their initial theme preference checked using `prefers-color-scheme` and have any additional changes saved in the browser
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+Want some support on the challenge? [Join our Slack community] and ask questions in the **#help** channel.
 
 ## Where to find everything
 
@@ -31,7 +29,7 @@ Your task is to build out the project to the designs inside the `/design` folder
 
 The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member]
 
 You will find all the required assets in the `/images` folder. The assets are already optimized.
 
